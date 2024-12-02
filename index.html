@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kau</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lançamentos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Poesias</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Contos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Machado de Assis</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Kau</b>Books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Categorias</li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Lançamentos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Poesias</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Contos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Machado de Assis</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Procure os melhores contos e poesias</h2>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+  </section>
+
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=2n49EAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3Uvria6v3kiaD6U-SB9ox058IRAg&w=1280" width="50" height="350"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=iseDDwAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U30KVTVV9O9Mp5Wuf0mPp2KPw_Gmw&w=1280" width="50" height="350"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=yKwEEAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2svi3o5Aw7fRnREYW41te2O9k_-A&w=1280" width="50" height="350" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://books.google.com.br/books/publisher/content?id=sQclAAAAQBAJ&hl=pt-BR&pg=PA1949&img=1&zoom=3&bul=1&sig=ACfU3U3_ejy3naJn7Zrbbu0YuKlgJQq3JA&w=1280" width="50" height="350" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://books.google.com.br/books/publisher/content?id=imGqEAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U12oRR2JzSw3-3ofG0TFazZ1ocvgg&w=1280"  width="50" height="350" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://books.google.com.br/books/publisher/content?id=jAEiEAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U1KzNzdLzopkAc0Y6dEngSeLewZCA&w=1280" width="50" height="350" alt="Livro sobre acessibilidade" />
+        </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h2 class="descrição__titulo-livro">Machado de Assis</h2>
+            <p class="descrição__texto">
+              Querida, ao pé do leito derradeiro<br>
+              Em que descansas dessa longa vida,<br>
+              Aqui venho e virei, pobre querida,<br>
+              Trazer-te o coração do companheiro.<br><br>
+      
+              Pulsa-lhe aquele afeto verdadeiro<br>
+              Que, a despeito de toda a humana lida,<br>
+              Fez a nossa existência apetecida<br>
+              E num recanto pôs um mundo inteiro.<br><br>
+      
+              Trago-te flores, — restos arrancados<br>
+              Da terra que nos viu passar unidos<br>
+              E ora mortos nos deixa e separados.<br><br>
+      
+              Que eu, se tenho nos olhos malferidos<br>
+              Pensamentos de vida formulados,<br>
+              São pensamentos idos e vividos.
+          </p>
+        </div>
+        <img src="https://correio.ims.com.br/wp-content/uploads/2015/07/A-Carolina.png" width="500" height="280" class="descrição__imagem" />
+      </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=itb_BgAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U33z_496hpqKX4s5K7fXacW_KnIXA&w=1280" width="50" height="350"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=7HTpDwAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2VAt6fHb98IKIRi4qyRfQITpBN7A&w=1280" width="50" height="350" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=pb5VEAAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3zxiyK2GeC5qpyVvRHm2pkLaFnpQ&w=1280" width="50" height="350" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/content?id=hUJfDIDxHbgC&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U1AQz9Yt7vJL-w7nC0xnHBJqpbRxA&w=1280" width="50" height="350"  alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=bhaxDgAAQBAJ&hl=pt-BR&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3wWJq1rDqyaiWppELiCds2GRzFWA&w=1280" width="50" height="350" height="900" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="https://books.google.com.br/books/publisher/content?id=_jfaEAAAQBAJ&hl=pt-BR&pg=PA1901&img=1&zoom=3&bul=1&sig=ACfU3U2DBRa6XjXnioWMNSvoXp_P4c59YA&w=1280" width="50" height="350" alt="livro sobre acessibilidade"></div>
+      </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Poeta do Mês</h3>
+            <h2 class="descrição__titulo-livro">Vinicius de Moraes</h2>
+            <p class="descrição__texto">Marcus Vinícius da Cruz de Mello Moraes, mais conhecido como Vinicius de Moraes, foi um poeta, dramaturgo, jornalista, diplomata, cantor e compositor brasileiro. Poeta essencialmente lírico, o que lhe renderia o apelido "Poetinha", que lhe teria atribuído Tom Jobim, notabilizou-se pelos seus sonetos.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vinicius_%28cropped%29.jpg/250px-Vinicius_%28cropped%29.jpg" width="500" height="280" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Lançamentos</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Vinicius De Moraes</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Poesias</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Contos</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Machado de Assis</a>
+        </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Educação</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Caelum.svg" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Caelum</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/CasaDoCodigo.svg" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">Casa do Código</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Educação online</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Alura.svg" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Alura</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraEmpresas.svg" alt="Logo da AluraParaEmpresas" />
+        <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam" />
+        <a href="#" class="lista-rodapé__link">Alura LATAM</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraStart.svg" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">Alura Start</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/MusicDot.svg" alt="Logo da Music Dot" />
+        <a href="#" class="lista-rodapé__link">Music Dot</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua" />
+        <a href="#" class="lista-rodapé__link">Alura Língua</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/PM3.svg" alt="Logo da PM3" />
+        <a href="#" class="lista-rodapé__link">PM3</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Comunidade</li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev" />
+        <a href="#" class="lista-rodapé__link">Scuba Dev</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/LikeABoss.svg" alt="Logo do Like a Boss" />
+        <a href="#" class="lista-rodapé__link">Like a Boss</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras" />
+        <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs" />
+        <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/GUJ.svg" alt="Logo do GUJ" />
+        <a href="#" class="lista-rodapé__link">GUJ</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
